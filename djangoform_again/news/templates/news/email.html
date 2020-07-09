@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .sonnguyen{
+        padding: 40px;
+    }
+</style>
+<form action="{% url 'news:pro' %}" method="post">
+{{ f }}
+    {% csrf_token %}
+    <input type="submit" value="gửi mail">
+</form>
+</body>
+</html>
